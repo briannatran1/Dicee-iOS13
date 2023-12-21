@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     // IBOutlet allows me to reference a UI elem
+    // code changes design
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
     
@@ -20,10 +21,14 @@ class ViewController: UIViewController {
         
         // WHO         WHAT    VALUE
         diceImageView1.image = UIImage(named: "DiceSix")
-//        diceImageView1.alpha = 0.5
         diceImageView2.image = UIImage(named: "DiceTwo")
     }
-
-
+    
+    // IBAction: interaction with UI leads to something happening in our code
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        diceImageView1.image = UIImage(named: "DiceFour")
+        diceImageView2.image = UIImage(named: "DiceFour")
+    }
+    
 }
 
