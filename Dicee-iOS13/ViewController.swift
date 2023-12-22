@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     // IBAction: interaction with UI leads to something happening in our code
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         
-        var diceArray = [UIImage(named: "DiceOne"), UIImage(named: "DiceTwo"),
+        let diceArray = [UIImage(named: "DiceOne"), UIImage(named: "DiceTwo"),
                          UIImage(named: "DiceThree"), UIImage(named: "DiceFour"),
                          UIImage(named: "DiceFive"), UIImage(named: "DiceSix")]
         
